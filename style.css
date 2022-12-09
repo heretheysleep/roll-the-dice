@@ -33,7 +33,7 @@ html {
 
 .player {
   align-content: space-between;
-  background: linear-gradient(to bottom, #aa85b0, #7b5b94) no-repeat;
+  background: linear-gradient(to bottom, #986ba3, #755092) no-repeat;
   color: #fff;
   display: grid;
   padding: 60px;
@@ -78,7 +78,7 @@ html {
 }
 
 .player--active {
-  background: linear-gradient(to bottom, #986ba3, #755092) no-repeat;
+  background: linear-gradient(to bottom, #aa85b0, #7b5b94) no-repeat;
 }
 
 .button,
@@ -91,7 +91,6 @@ html {
 
 .dice {
   background-color: rgba(255, 255, 255, 0.15);
-  background-image: url(/dices/5.svg);
   top: 134px;
   width: 100px;
   height: 100px;
