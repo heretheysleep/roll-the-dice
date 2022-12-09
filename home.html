@@ -5,10 +5,48 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
     <title>Roll the Dice</title>
 </head>
 
 <body class="app">
+    <main class="content">
+        <section class="player player--1 player--active">
+            <header class="player__header">
+                <h1 class="player__title">PLAYER 1</h1>
+                <p class="player__name">Player 1's name</p>
+            </header>
+
+            <p class="player__won-matches">0</p>
+
+            <footer class="player__current-match-informations">
+                <h2 class="player__subtitle">Your current score is</h2>
+                <p class="player__score">0</p>
+            </footer>
+        </section>
+        <section class="player player--2">
+            <header class="player__header">
+                <h1 class="player__title">PLAYER 2</h1>
+                <p class="player__name">Player 2's name</p>
+            </header>
+
+            <p class="player__won-matches">0</p>
+
+            <footer class="player__current-match-informations">
+                <h2 class="player__subtitle">Your current score is</h2>
+                <p class="player__score">0</p>
+            </footer>
+        </section>
+
+        <div class="dice"></div>
+
+        <button class="button button--roll">Roll the dice</button>
+        <button class="button button--reset">Reset game</button>
+    </main>
 </body>
 
 </html>
