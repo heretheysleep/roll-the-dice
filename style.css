@@ -1,0 +1,132 @@
+html {
+  font-size: 16px;
+}
+
+.app,
+.player__title,
+.player__name,
+.player__subtitle,
+.player__score {
+  margin: 0;
+}
+
+.app {
+  align-content: center;
+  background: linear-gradient(to bottom right, #5647ae, #622488) no-repeat;
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+}
+
+.content {
+  border: 1px solid #aa85b0;
+  border-radius: 0.25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  max-height: 600px;
+  max-width: 1000px;
+  overflow: hidden;
+  position: relative;
+  width: calc(100vw - 2px);
+}
+
+.player {
+  align-content: space-between;
+  background: linear-gradient(to bottom, #aa85b0, #7b5b94) no-repeat;
+  color: #fff;
+  display: grid;
+  padding: 60px;
+  text-align: center;
+}
+
+.player__title,
+.player__won-matches,
+.player__score,
+.button {
+  font-family: "Open Sans";
+}
+
+.player__name,
+.player__subtitle {
+  font-family: "Poppins";
+  letter-spacing: 1px;
+}
+
+.player__title {
+  font-size: 3rem;
+  letter-spacing: 0.125rem;
+}
+
+.player__name,
+.player__subtitle {
+  font-size: 1.125rem;
+}
+
+.player__won-matches {
+  font-size: 4rem;
+}
+
+.player__subtitle {
+  font-weight: 500;
+  margin: 0 2rem 1rem 2rem;
+  text-transform: uppercase;
+}
+
+.player__score {
+  font-size: 2.25rem;
+}
+
+.player--active {
+  background: linear-gradient(to bottom, #986ba3, #755092) no-repeat;
+}
+
+.button,
+.dice {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.dice {
+  background-color: rgba(255, 255, 255, 0.15);
+  background-image: url(/dices/5.svg);
+  top: 134px;
+  width: 100px;
+  height: 100px;
+}
+
+.button {
+  border-radius: 0.25rem;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  cursor: pointer;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  width: fit-content;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.button--roll {
+  background-color: #622488;
+  border: 0;
+  font-size: 1.125rem;
+  bottom: 191px;
+}
+
+.button--roll:hover {
+  background-color: #742887;
+}
+
+.button--reset {
+  background-color: rgba(255, 255, 255, 0.075);
+  border: 1px solid #fff;
+  font-size: 0.875rem;
+  bottom: 134px;
+}
+
+.button--reset:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
